@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      <label>Nome:<input type="text" name="nome" placeholder="Nome completo"></label><br>
+      <label>CPF:<input type="text" name="cpf" maxlength="14" placeholder="ex: 123.456.789-12"></label><br>
+      <label>Data de nascimento:<input type="date" name="nascimento"></label><br>
+      <label>Sexo:
+        <input type="radio" name="sexo" value="1" checked> Feminino
+        <input type="radio" name="sexo" value="2"> Masculino
+      </label><br>
+      <label>Estado civil:
+        <select class="" name="estadoCivil">
+          <option value="solteiro"> Solteiro(a) </option>
+          <option value="casado"> Casado(a) </option>
+          <option value="divorciado"> Divorciado(a)</option>
+          <option value="viuvo"> Viúvo(a)</option>
+        </select>
+      </label><br>
+      <label>Cidade:<input type="text" name="cidade" placeholder="Insira sua cidade"></label><br>
+      <label>Estado:<input type="text" name="estado" placeholder="ex: São Paulo"></label><br>
+      <label>CEP:<input type="text" name="cep" maxlength="9" placeholder="ex: 12345-000"></label><br>
+      <label>E-mail:<input type="email" name="email" placeholder="ex: hotel@gmail.com"></label><br>
+      <label>Senha:<input type="password" name="senha" maxlength="20" placeholder="até 20 caracteres"></label><br>
+      <label>Confirmar senha:<input type="password" name="confirmarSenha" placeholder="insira novamente a senha"></label><br>
+      <label><input type="submit" value="Cadastrar"></label>
+
+
+    </form>
+  </body>
+</html>

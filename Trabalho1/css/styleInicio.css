@@ -1,0 +1,110 @@
+body{
+  font-family: Verdana, sans-serif;
+  background-image: url("../images/bg.png");          /* coloca imagem no fundo */
+}
+
+#container{                 /* é o bloco onde está todo o conteudo */
+  width: 70%;
+  margin: 10px auto;
+  background-color: #F3EBF6;
+}
+
+h1{                               /* edita o titulo Hotel Aurora */
+  text-align: center;
+  color: white;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 180%;
+  text-shadow: black 0.1em 0.1em 0.2em;    /* deixa o texto com uma sombra preta */
+}
+h2{
+  text-align: center;
+}
+
+#header{                 /* coloca a imagem da praia no cabeçalho */
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  padding: 2%;
+}
+
+#mainnav{                 /* edita o menu de navegação */
+  background-color: #014040;
+  height: 40px;
+}
+#mainnav a{                  /* edita os links do menu de navegação */
+  padding: 10px;
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#mainnav a:hover{                 /* edita os links do menu de navegação quando passa o mouse por cima */
+  background-color: #011C26;
+  color: white;
+}
+
+#contents{                  /* define a posicao e tamanho do conteudo principal */
+  width: 55%;
+  float: left;
+  margin: 2%;
+}
+#contents img{                  /* edita as imagens do conteudo para ficarem do mesmo tamanho e arredondadas */
+  border-radius: 50%;
+  width: 25%;
+  padding: 2%;
+}
+
+#form{                  /* define posicao, cor, tamanho, bordas e sombra do formulario de login */
+  float: right;
+  background-color: #FFFFFF;
+  width: 350px;
+  height: 300px;
+  margin: 2%;
+  margin-top: 5%;
+  padding: 1%;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+#form img{                  /* edita a imagem do usuario (no formulario) pra ficar centralizada */
+  width: 15%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+input{                        /* edita os input do formulario */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {                       /*  edita o botao "Fazer Login" */
+  width: 100%;
+  background-color: #014040;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {                       /* muda a cor do botao "Fazer Login" quando passa o mouse */
+  background-color: #011C26;
+}
+#message{                       /* edita o texto "Não possui cadastro? Crie uma conta." */
+  text-align: center;
+  font-size: 13px;
+}
+#message a{                      /* edita a cor do link que esta no "Crie uma conta." */
+  text-decoration: none;
+  color: #014040;
+}
+
+#footer{                      /* edita o rodapé */
+  background-color: #014040;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  clear: both;     /* limpa os floats das colunas contents e form */
+}
