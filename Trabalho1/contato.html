@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styleContato.css">
+    <script type="text/javascript" src="script/javascript.js"></script>
+    <title>Contato</title>
+  </head>
+  <body>
+    <div id="container">    <!-- inicia o container q é onde esta todo o conteudo -->
+      <div id="header">    <!-- inicia o cabecalho -->
+        <h1>Hotel Aurora</h1>
+      </div>    <!-- fim do cabecalho -->
+      <div id="mainnav">    <!-- inicia o menu de navegação com os links para as outras paginas-->
+        <a href="inicio.html">Inicio</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="reserva.html">Reservar</a>
+      </div>    <!-- fim do menu -->
+      <div id="form">
+        <form class="" action="" method="post" onsubmit="return validaLogin()">
+          <br><label>Nome:<input type="text" required name="nome"><span id="nomeErro"></span></label><br>
+          <br><label>Email:<input type="email" required name="email"><span id="emailErro"></span></label><br>
+          <br><label>Celular:<input type="tel" name="telefone" placeholder="(XX)XXXXX-XX-XX"><span id="telErro"></span></label><br>
+          <br><label>Como conheceu o hotel?<br>
+            <div id="formconheceu">
+              <p><input type="checkbox" name="area1" value="recom"> Recomendação de conhecidos
+              <p><input type="checkbox" name="area2" value="social"> Redes sociais
+              <p><input type="checkbox" name="area3" value="internet"> Em buscas na internet
+              <p><input type="checkbox" name="area4" value="agencia"> Agência de viagens
+            </div>
+          </label>
+          <br><label>Deixe sua observação:<br>
+            <br><textarea name="obs" rows="8" cols="40" required placeholder="Comentários e sugestões"></textarea>
+          </label><br>
+          <br><label><input type="submit" value="Enviar"></label>
+        </form>
+      </div>
+      <div id="footer">    <!-- rodapé -->
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
