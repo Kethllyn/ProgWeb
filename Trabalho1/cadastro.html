@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styleCadastro.css">
+    <script type="text/javascript" src="script/javascript.js"></script>
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div id="container">    <!-- inicia o container q é onde esta todo o conteudo -->
+      <div id="header">    <!-- inicia o cabecalho -->
+        <h1>Hotel Aurora</h1>
+      </div>    <!-- fim do cabecalho -->
+      <div id="mainnav">    <!-- inicia o menu de navegação com os links para as outras paginas-->
+        <a href="inicio.html">Inicio</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="reserva.html">Reservar</a>
+      </div>    <!-- fim do menu -->
+      <div id="form">
+        <form class="" action="" method="post" onsubmit="return validaCadastro()">
+          <br><label>Nome:<input type="text" name="nome" required placeholder="Nome completo"> <span id="nomeErro"></span> </label><br>
+          <br><label>CPF:<input type="text" name="cpf" required maxlength="14" placeholder="ex: 123.456.789-12"> <span id="cpfErro"></span> </label><br>
+          <br><label>Data de nascimento:<input type="date" required min="1900-01-01" name="nascimento"><span id="dataErro"></span></label><br>
+          <br><label>Sexo:<br>
+            <div id="formsexo">
+              <p><input type="radio" name="sexo" value="1" checked> Feminino
+              <p><input type="radio" name="sexo" value="2"> Masculino
+            </div>
+          </label>
+
+          <br><label>Estado civil:
+            <select class="" name="estadoCivil"  required>
+              <option value="solteiro"> Solteiro(a) </option>
+              <option value="casado"> Casado(a) </option>
+              <option value="divorciado"> Divorciado(a)</option>
+              <option value="viuvo"> Viúvo(a)</option>
+            </select>
+          </label></br>
+          <br><label>Cidade:<input type="text" name="cidade" required placeholder="Insira sua cidade"><span id="cidadeErro"></span></label><br>
+          <br><label>Estado:<input type="text" name="estado" required placeholder="Apenas as siglas. Ex: SP"><span id="estadoErro"></span></label><br>
+          <br><label>CEP:<input type="text" name="cep" required placeholder="ex: 12345-000"></label><span id="cepErro"></span><br>
+          <br><label>E-mail:<input type="email" name="email" required placeholder="ex: hotel@gmail.com"><span id="emailErro"></span></label><br>
+          <br><label>Senha:<input type="password" name="senha1" onkeyup="validaCadastro()" required placeholder="Até 12 caracteres"><span id="senha1Erro"></span></label><br>
+          <div id="erroSenhaForca"></div>
+          <br><label>Confirmar senha:<input type="password"  name="senha2" required onpaste:"return false" placeholder="Insira novamente a senha"><span id="senha2Erro"></span></label><br>
+          <br><label><input type="submit" value="Cadastrar"></label>
+        </form>
+      </div>
+      <div id="footer">    <!-- rodapé -->
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>    <!-- fim do container -->
+  </body>
+</html>
