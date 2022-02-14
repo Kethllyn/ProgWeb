@@ -1,0 +1,75 @@
+body{
+  background-color: #009578;
+}
+.container{                 
+  width: 70%;
+  margin: 10px auto;
+  background-color: #F3EBF6;
+  padding: 0.5%;
+}
+.header{
+  background-color: #009578;
+  background-image: url('evelynDIR.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100px;
+}
+.contents{
+  padding: 2%;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-family: 'Girassol', cursive;
+}
+h3{
+  color: #373737;
+  font-family: 'Verdana', sans-serif;
+}
+aside h3{
+  color: #F5F5F0;
+  background-color: grey;
+  padding-left: 2%;
+}
+p{
+  font-family: 'Arial', sans-serif;
+}
+
+
+table, td, th{
+  font-family: Arial, Helvetica, sans-serif;
+  border:1px solid #ddd;
+
+  border-collapse: collapse;
+  text-align: center;
+}
+th{
+  background-color: #1c644c;
+  color: white;
+}
+.tabela tr:nth-child(odd){
+  background-color: #48D1CC;
+}
+.tabela tr:nth-child(even){
+  background-color: #ddd;
+}
+
+
+input{
+  background-color: #48D1CC;
+  font-weight: bold;
+  border: 3px solid #1c644c;
+}
+textarea{
+  background-color: #48D1CC;
+  border: 3px solid #1c644c;
+}
+button{
+  background-color: #48D1CC;
+  border: 3px solid #1c644c;
+  font: 12px, Arial, Helvetica, sans-serif;
+}
+select{
+  background-color: #48D1CC;
+  font: 12px, Arial, Helvetica, sans-serif;
+}

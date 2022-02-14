@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto:400,700" rel="stylesheet">
+  </head>
+  <body class="back-photo">
+
+    <div class="form-panel">
+          <form method="POST" action="cadastro.php">
+              <div>
+                <input type="text" name="nome" maxlength="60" id="registro" required="true"  placeholder="Nome completo" class="input-control">
+              </div>
+              <div>
+                <input type="text" name="apelido" maxlength="15" pattern="[a-zA-Z]+" placeholder="Apelido" class="input-control">
+              </div>
+              <div>
+                <input type="number" name="telefone" pattern="[0-9]{2}[9][0-9]{8}" required="true"  placeholder="Número de telefone (com DDD)" class="input-control">
+              </div>
+              <div>
+                <input type="email" name="email" required="true" placeholder="E-mail" class="input-control">
+              </div>
+              <div>
+                  <input type="submit" value="Envie o formulário" class="button button-register">
+              </div>
+              <div>
+                  <a href="listar.php"  class="button button-lista" >Ver a lista de Contatos</a>
+              </div>
+          </form>
+    </div>
+  </body>
+</html>>

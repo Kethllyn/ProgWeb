@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <button type="button" name="button" onclick="clicar(this)">Trocar modo</button>
+      <form  class="" action="" method="post">
+        <label><input type="text" name="nome" placeholder="Nome completo"></label><br>
+        <label><input type="email" name="email" placeholder="E-mail"></label><br>
+        <label><input type="password" name="senha" placeholder="Senha"></label><br>
+        <h4>Sexo:</h4>
+          <p><input type="radio" name="sexo" value="1" checked> Feminino </p>
+          <p><input type="radio" name="sexo" value="2"> Masculino </p>
+        <label><input type="reset" name="b1" value="Limpar"></label>
+        <label><input type="submit" value="Enviar"></label>
+      </form>
+
+    <script type="text/javascript">
+      function clicou(botao) {
+        document.body.style.backgroundColor = "white";
+        botao.setAttribute("onclick","clicar(this);");
+      }
+
+      function clicar(botao) {
+        document.body.style.backgroundColor = "black";
+        botao.setAttribute("onclick","clicou(this);");
+      }
+
+    </script>
+  </body>
+</html>
