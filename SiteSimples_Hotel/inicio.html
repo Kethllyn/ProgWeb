@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styleInicio.css">    <!-- liga o html ao css -->
+    <script type="text/javascript" src="script/javascript.js"></script>    <!-- liga o html ao javascript -->
+    <title>Hotel</title>
+  </head>
+  <body>
+    <div id="container">    <!-- inicia o container q é onde esta todo o conteudo -->
+      <div id="header">    <!-- inicia o cabecalho -->
+        <h1>Hotel Aurora</h1>
+      </div>    <!-- fim do cabecalho -->
+      <div id="mainnav">    <!-- inicia o menu de navegação com os links para as outras paginas-->
+        <a href="inicio.html">Inicio</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="reserva.html">Reservar</a>
+      </div>    <!-- fim do menu -->
+      <div id="contents">    <!-- inicia o texto principal q inclui 3 imagens -->
+        <h2>Seja bem-vindo ao Hotel Aurora</h2></br>
+          <p>Nosso prazer é hospedar você, Hotel Aurora junto com você nos melhores momentos de lazer. Com localização extremamente privilegiada no centro de Maragogi, oferecemos aos hóspedes uma estrutura completa, com acomodações aconchegantes, restaurante, diversos serviços, espaço para eventos e atendimento personalizado.
+          </p>
+          <p> O Hotel Aurora tem um estilo arquitetônico arrojado e dependências elegantes, que vão fazer de sua estadia em Alagoas/NE, uma experiência inesquecível.
+          </p>
+          <p>A localização estratégica no centro da cidade permite que os hóspedes do Aurora tenham fácil acesso a bancos, farmácias, supermercados, postos de combustíveis e ao comércio em geral, sendo uma ótima opção de parada para descanso e opções de lazer e passeios pelas variadas praias de nossa região.</p>
+          <p>A cidade de Maragogi fica à 124km de Maceió, capital do estado, e cerca de 130km de Recife, capital de Pernambuco, próximo a diversas cidades importantes, praias e pontos turísticos.Contamos com restaurante aberto todos os dias para almoço e jantar, estacionamento dentro do hotel com manobrista, segurança 24 horas, internet WiFi, academia, piscinas e sala de jogos.
+          </p>
+          <p>Hospede-se conosco, será um prazer fazer parte de sua viagem, viver é viajar.
+          </p>
+          <p>Conheça nossas acomodações e passeios:</p></br>
+          <img src="images/img1.jpg" alt="Passeios">
+          <img src="images/img2.jpeg" alt="Suítes">
+          <img src="images/img3.jpg" alt="Piscina">
+      </div>     <!-- fim do texto principal -->
+      <div id="form">    <!-- inicia o formulario -->
+        <img src="images/usuario.png">
+        <p align="center" >Fazer Login</p>
+        <form class="" action="" onsubmit="return validaLogin()" method="post">
+            <label><input type="email" name="email" required placeholder="E-mail"><span id="emailErro"></span></label><br>
+            <label><input type="password" name="senha" required placeholder="Senha"></span></label><br>
+            <label><input type="submit" value="Fazer login"></label>
+            <p id="message">Não possui cadastro? <a href="cadastro.html">Crie uma conta.</a></p>
+        </form>
+      </div>    <!-- fim do formulario -->
+      <div id="footer">    <!-- rodapé -->
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>    <!-- fim do container -->
+  </body>
+</html>
